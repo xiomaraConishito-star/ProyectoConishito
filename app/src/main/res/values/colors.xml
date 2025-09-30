@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_window_bg">#BC747C</color>
+
+    <color name="md_theme_primary">#E4717A</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#FFD9DC</color>
+
+    <color name="md_theme_secondary">#1B8E85</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+
+    <color name="md_theme_tertiary">#715BE4</color>
+    <color name="md_theme_background">#FFF8F8</color>
+    <color name="md_theme_surface">#FFFFFF</color>
+    <color name="md_theme_outline">#D7A2A7</color>
+
+    <!-- Splash background usa el primary -->
+    <color name="splash_bg">@color/md_theme_primary</color>
+</resources>

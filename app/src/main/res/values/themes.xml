@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ConishitoApp" parent="Theme.Material3.DayNight.NoActionBar" />
+
+    <!-- Splash (fallback < Android 12) -->
+    <style name="Theme.Conishito.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon_inset</item>
+        <item name="windowSplashScreenBackground">@color/splash_bg</item>
+        <item name="postSplashScreenTheme">@style/Theme.ConishitoApp</item>
+        <item name="android:windowBackground">@color/app_window_bg</item>
+
+    </style>
+</resources>
