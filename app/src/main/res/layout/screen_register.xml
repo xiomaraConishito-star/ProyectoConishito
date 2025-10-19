@@ -12,16 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Logo (puedes usar el mismo del splash) -->
         <ImageView
             android:id="@+id/imgLogo"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/logonisha"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Título -->
         <com.google.android.material.textview.MaterialTextView
@@ -129,7 +128,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Teléfono (opcional)"
-                android:inputType="phone"/>
+                android:digits="0123456789"
+                android:inputType="phone"
+                android:maxLength="9"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Ciudad (AutoComplete) -->

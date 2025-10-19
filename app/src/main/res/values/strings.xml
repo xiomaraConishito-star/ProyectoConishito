@@ -1,3 +1,49 @@
 <resources>
-    <string name="app_name">ConishitoApp</string>
+    <string name="app_name">Conishito</string>
+    <string name="favorite">Agregar a favoritos</string>
+    <string name="remove_favorite">Quitar de favoritos</string>
+    <string name="login_success">Sesión iniciada como %1$s</string>
+    <string name="login_required">Inicia sesión para continuar</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="home_title">Mascotas buscando Hogar</string>
+    <string name="user_title">Usuario</string>
+    <string name="favorites_title">Mis favoritos</string>
+    <string name="report_title">Reportar mascota</string>
+    <string name="favorites_empty">Aún no tienes mascotas en favoritos.</string>
+    <string name="favorites_guest">Debes iniciar sesión para ver tus favoritos.</string>
+    <string name="go_to_login">Ir a iniciar sesión</string>
+    <string name="register_success">Registro completado. Ahora puedes iniciar sesión.</string>
+    <string name="register_error">No se pudo registrar. Inténtalo nuevamente.</string>
+    <string name="login_error">Credenciales incorrectas. Verifica tus datos.</string>
+    <string name="fields_required">Completa todos los campos obligatorios.</string>
+    <string name="password_mismatch">Las contraseñas no coinciden.</string>
+    <string name="logout_success">Sesión cerrada correctamente.</string>
+    <string name="email_invalid">Ingresa un correo válido.</string>
+    <string name="phone_invalid">El teléfono debe tener hasta 9 dígitos numéricos.</string>
+    <string name="terms_required">Debes aceptar los términos y condiciones.</string>
+    <string name="navigation_open">Abrir menú</string>
+    <string name="navigation_close">Cerrar menú</string>
+    <string name="navigation_subtitle">Encuentra o reporta mascotas</string>
+    <string name="detail_pet_info">Información de la mascota</string>
+    <string name="detail_type">Tipo: %1$s</string>
+    <string name="detail_age">Edad: %1$s</string>
+    <string name="detail_city">Ciudad: %1$s</string>
+    <string name="detail_description">Descripción</string>
+    <string name="contact_button_text">Contacto</string>
+    <string name="whatsapp_not_found">No se encontró WhatsApp instalado.</string>
+    <string name="pet_not_found">No encontramos la información de la mascota.</string>
+    <string name="report_form_title">Cuéntanos sobre la mascota</string>
+    <string name="report_form_description">Completa los datos para reportar una nueva mascota perdida o encontrada.</string>
+    <string name="report_send">Enviar reporte</string>
+    <string name="report_sent">¡Gracias! Revisaremos tu reporte.</string>
+    <string name="pet_photo_placeholder">Foto de la mascota</string>
+    <string name="pet_photo_description">Foto de %1$s</string>
+
+    <string-array name="default_cities">
+        <item>Lima</item>
+        <item>Arequipa</item>
+        <item>Cusco</item>
+        <item>Piura</item>
+        <item>Trujillo</item>
+    </string-array>
 </resources>

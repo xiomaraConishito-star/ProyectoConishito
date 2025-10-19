@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<inset xmlns:android="http://schemas.android.com/apk/res/android"
-    android:drawable="@drawable/logonisha"
-    android:inset="24dp" />
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <size
+                android:width="@dimen/splash_icon_bg_size"
+                android:height="@dimen/splash_icon_bg_size" />
+            <solid android:color="@color/md_theme_onPrimary" />
+        </shape>
+    </item>
+
+
+    <item>
+        <inset
+            android:insetLeft="24dp"
+            android:insetTop="24dp"
+            android:insetRight="24dp"
+            android:insetBottom="24dp">
+            <bitmap
+                android:src="@drawable/ic_favorite_24"
+            android:gravity="center" />
+        </inset>
+    </item>
+
+</layer-list>

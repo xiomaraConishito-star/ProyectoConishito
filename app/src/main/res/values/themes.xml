@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.ConishitoApp" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Theme.ConishitoApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Conishito.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Conishito.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Conishito.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Conishito.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Conishito.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Conishito.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Conishito.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Conishito.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Conishito.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Conishito.LabelLarge</item>
+    </style>
 
-    <!-- Splash (fallback < Android 12) -->
     <style name="Theme.Conishito.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon_inset</item>
         <item name="windowSplashScreenBackground">@color/splash_bg</item>
