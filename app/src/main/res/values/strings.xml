@@ -38,6 +38,7 @@
     <string name="report_sent">¡Gracias! Revisaremos tu reporte.</string>
     <string name="pet_photo_placeholder">Foto de la mascota</string>
     <string name="pet_photo_description">Foto de %1$s</string>
+    <string name="store_title">Tienda</string>
 
     <string-array name="default_cities">
         <item>Lima</item>
@@ -46,4 +47,58 @@
         <item>Piura</item>
         <item>Trujillo</item>
     </string-array>
+
+    <string name="product_stock">Stock: %d</string>
+
+    <!-- Placeholders y labels para detalle de producto -->
+    <string name="product_name_placeholder">Nombre Producto</string>
+    <string name="product_price_placeholder">S/ 0.00</string>
+    <string name="product_description_label">Características</string>
+    <string name="product_description_placeholder">Descripción del producto</string>
+    <string name="product_colors_label">Colores disponibles</string>
+    <string name="product_colors_placeholder">Rojo, Azul</string>
+
+    <!-- Placeholders para item de la lista -->
+    <string name="item_name_placeholder">Nombre</string>
+    <string name="item_price_placeholder">S/ 0.00</string>
+
+    <!-- Carrito y checkout -->
+    <string name="cart_title">Cesta</string>
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="added_to_cart">Producto agregado al carrito</string>
+    <string name="cart_empty">Tu carrito está vacío.</string>
+    <string name="checkout">Pagar</string>
+    <string name="checkout_success">Compra realizada con éxito</string>
+    <string name="checkout_name_hint">Nombre completo</string>
+    <string name="checkout_address_hint">Dirección de envío</string>
+    <string name="checkout_payment_method">Método de pago</string>
+    <string name="checkout_confirm">Confirmar pago</string>
+    <string name="remove_item">Eliminar</string>
+    <string name="qty">Cantidad: %d</string>
+    <string name="cart_total">Total: S/ %.2f</string>
+    <string name="complete_data">Completa los datos</string>
+    <string name="summary_label">Resumen de pedido</string>
+    <string name="order_summary_placeholder">Items: %d\nSub-total: S/ %.2f</string>
+    <string name="total_placeholder">Total: S/ %.2f</string>
+    <string name="payment_card">Tarjeta</string>
+    <string name="payment_cash">Efectivo</string>
+    <string name="checkout_note">Al confirmar, recibirás un correo con los detalles de tu pedido.</string>
+    <string name="purchase_history_title">Mis compras</string>
+    <string name="purchase_date_placeholder">01–01–2025</string>
+    <string name="purchase_summary">%d items - S/ %.2f</string>
+
+    <!-- Mensajes y campos para pago con tarjeta -->
+    <string name="card_holder">Titular de la tarjeta</string>
+    <string name="card_number_hint">Número de tarjeta</string>
+    <string name="card_expiry_hint">MM/AAAA</string>
+    <string name="card_cvv_hint">CVV</string>
+    <string name="card_invalid">Número de tarjeta inválido</string>
+    <string name="card_expired">La tarjeta está expirada</string>
+    <string name="card_cvv_invalid">CVV inválido</string>
+    <string name="card_holder_required">Ingresa el nombre del titular</string>
+    <string name="processing_payment">Procesando pago…</string>
+    <string name="payment_failed">El pago falló. Intenta nuevamente.</string>
+    <string name="payment_success">Pago aprobado. Gracias por tu compra.</string>
+    <string name="card_dni">DNI</string>
+    <string name="card_dni_required">Ingresa un DNI válido de 8 dígitos</string>
 </resources>

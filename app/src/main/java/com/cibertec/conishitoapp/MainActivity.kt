@@ -2,6 +2,7 @@ package com.cibertec.conishitoapp
 
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -11,6 +12,8 @@ import com.cibertec.conishitoapp.databinding.ActivityMainBinding
 import com.cibertec.conishitoapp.ui.fav.FavoritesFragment
 import com.cibertec.conishitoapp.ui.home.HomeFragment
 import com.cibertec.conishitoapp.ui.report.ReportPetFragment
+import com.cibertec.conishitoapp.ui.store.CartFragment
+import com.cibertec.conishitoapp.ui.store.StoreFragment
 import com.cibertec.conishitoapp.ui.user.UserFragment
 import com.google.android.material.navigation.NavigationView
 
@@ -40,7 +43,22 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
+        // Manejar la navegación del Drawer
         binding.navigationView.setNavigationItemSelectedListener(this)
+
+        // Manejar back gestures / botón atrás con OnBackPressedDispatcher
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                    binding.drawerLayout.closeDrawer(GravityCompat.START)
+                } else {
+                    // delegar al comportamiento por defecto
+                    isEnabled = false
+                    onBackPressedDispatcher.onBackPressed()
+                    isEnabled = true
+                }
+            }
+        })
 
         if (savedInstanceState == null) {
             navigateTo(R.id.nav_home, shouldCheck = true)
@@ -58,6 +76,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_user -> UserFragment() to R.string.user_title
             R.id.nav_fav -> FavoritesFragment() to R.string.favorites_title
             R.id.nav_report -> ReportPetFragment() to R.string.report_title
+            R.id.nav_store -> StoreFragment() to R.string.store_title
+            R.id.nav_cart -> CartFragment() to R.string.cart_title
             else -> null to null
         }
 
@@ -71,13 +91,5 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
-    }
-
-    override fun onBackPressed() {
-        if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            binding.drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
     }
 }

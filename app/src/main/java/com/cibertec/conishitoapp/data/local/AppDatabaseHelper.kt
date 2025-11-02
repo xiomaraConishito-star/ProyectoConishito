@@ -69,11 +69,14 @@ class AppDatabaseHelper(context: Context) :
 
     private fun seedPets(db: SQLiteDatabase) {
         val pets = listOf(
-            arrayOf("Luna", "Perro", "4 meses", "Lima", null, "Cachorra cariñosa, le encantan los paseos en parque.", "987654321"),
-            arrayOf("Milo", "Gato", "1 año", "Arequipa", null, "Gatito tranquilo que disfruta dormir al sol.", "912345678"),
-            arrayOf("Kira", "Perro", "8 meses", "Cusco", null, "Muy juguetona y se lleva bien con niños.", "955112233"),
-            arrayOf("Nala", "Gato", "3 años", "Lima", null, "Gata sociable, está esterilizada y vacunada.", "998887766"),
-            arrayOf("Shira", "Perro", "4 años", "Lima", null, "La mejor de todas", "999965865")
+            arrayOf("Rocky", "Perro", "11 meses", "Lima", null, "Cachorra jugueton, le encantan los paseos en parque.", "987654321"),
+            arrayOf("Shira", "Perro", "4 años", "Lima", null, "Caracter fuerte y amorosa", "995365865"),
+            arrayOf("Tora", "Gato", "4 años", "Arequipa", null, "Gatito tranquilo que disfruta dormir al sol y cazar ratones.", "912345678"),
+            arrayOf("Chloe", "Perro", "10 meses", "Cusco", null, "Muy juguetona y se lleva bien con niños y ancianos.", "955112233"),
+            arrayOf("Alaska", "Perro", "1 año", "Lima", null, "Sociable, está esterilizada y vacunada.", "998887766"),
+            arrayOf("Popis", "Perro", "7 meses", "Lima", null, "Muy traviesa y risuena, le gusta jugar con gatos", "999650005"),
+            arrayOf("Gato", "Gato", "7 meses", "Lima", null, "Solitario pero muy jugueton", "999569865")
+
         )
 
         pets.forEach { pet ->

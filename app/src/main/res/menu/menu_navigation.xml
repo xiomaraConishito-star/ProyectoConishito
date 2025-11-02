@@ -16,4 +16,12 @@
         android:id="@+id/nav_report"
         android:icon="@drawable/ic_paw"
         android:title="@string/report_title"/>
+    <item
+        android:id="@+id/nav_store"
+        android:icon="@drawable/ic_store_24"
+        android:title="@string/store_title"/>
+    <item
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/ic_shopping_cart_24"
+        android:title="@string/cart_title"/>
 </menu>
